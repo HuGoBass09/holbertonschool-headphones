@@ -364,7 +364,7 @@ a {
   letter-spacing: var(--nav-item-letter-spacing);
 }
 
-.nav .nav-item+.nav-item {
+.nav .nav-item + .nav-item {
   margin: var(--nav-item-margin);
 }
 
@@ -465,31 +465,31 @@ a {
   display: none;
 }
 
-.menu-btn:checked~.navbar-menu {
+.menu-btn:checked ~ .navbar-menu {
   display: block;
 }
 
-.menu-btn:checked~.navbar-menu .nav {
+.menu-btn:checked ~ .navbar-menu .nav {
   max-height: 100%;
   overflow: inherit;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
+.header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon::before {
+.header .menu-btn:checked ~ .menu-icon .navicon::before {
   transform: rotate(-45deg);
   width: 2rem;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
   width: 2rem;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon::after,
-.header .menu-btn:checked~.menu-icon .navicon::before {
+.header .menu-btn:checked ~ .menu-icon .navicon::after,
+.header .menu-btn:checked ~ .menu-icon .navicon::before {
   top: 0;
 }
 
